@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th=http://www.thymeleaf.org>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>球団名</h2>
+	<div th:text="${baseball.teamName}"></div>
+	<h2>本拠地</h2>
+	<div th:text="${baseball.headquarters}"></div>
+	<h2>発足</h2>
+	<div th:text="${baseball.inauguration}"></div>
+	<h2>歴史</h2>
+	<pre th:text="${baseball.history}"></pre>
+	<a th:href="@{/}">
+		<button type="button">戻る</button>
+	</a>
+
+</body>
+</html>
