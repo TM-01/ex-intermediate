@@ -1,12 +1,23 @@
 package com.example.domani;
-
+/**
+ * 球団情報.
+ * @author tatsuro.miyazaki
+ *
+ */
 public class Baseball {
+	/**ID	 */
 	private Integer id;
+	/**リーグ名	 */
 	private String leagueName;
+	/**チーム名	 */
 	private String teamName;
+	/**本拠地	 */
 	private String headquarters;
+	/**発足年	 */
 	private String inauguration;
+	/**歴史	 */
 	private String history;
+	
 	public Integer getId() {
 		return id;
 	}

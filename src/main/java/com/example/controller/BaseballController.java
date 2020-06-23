@@ -12,13 +12,22 @@ import com.example.domani.Baseball;
 import com.example.form.FormBaseball;
 import com.example.service.BaseballService;
 
-
+/**
+ * チーム一覧とチームページの遷移.
+ * @author tatsuro.miyazaki
+ *
+ */
 @Controller
 @RequestMapping("/")
 public class BaseballController {
 	@Autowired
 	private BaseballService baseballService;
-		
+	
+	/**
+	 * チーム一覧の表示.
+	 * @param model 全件検索
+	 * @return
+	 */
 	@RequestMapping("")
 	public String index(Model model) {
 		List<Baseball> baseball = baseballService.findAll();
